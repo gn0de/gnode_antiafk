@@ -114,6 +114,7 @@ local function antiafk( )
 		timer.Destroy( "antiafk" )
 		hook.Remove( "HUDPaint", "aafkpaint" )
 		aafkon = 0
+		chat.AddText(Color(204, 40, 40, 255), "[", Color(23, 196, 134, 255), "Anti-AFK", Color(204, 40, 40, 255), "]" .. " ", Color(33, 167, 196, 255), "has been removed!")
 	end
 end
 concommand.Add( "gnode_antiafk", antiafk )
